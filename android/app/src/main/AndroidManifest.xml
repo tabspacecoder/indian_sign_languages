@@ -1,5 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.cgv.isl.indian_sign_languages">
+    <uses-permission android:name="android.permission.INTERNET"/>
    <application
         android:label="indian_sign_languages"
         android:icon="@mipmap/ic_launcher">
