@@ -35,7 +35,7 @@ class ShareUs extends StatelessWidget {
             ),
             AnimatedButton(
               onPressed: () async{
-                await Share.share('check out my website https://example.com', subject: 'Look what I made!');
+                await Share.share('Check out a cool app on https://github.com/tabspacecoder/indian_sign_languages', subject: 'An app on indian sign languages!');
               },
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
