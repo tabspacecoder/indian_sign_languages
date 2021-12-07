@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:indian_sign_languages/splash_screen.dart';
 import 'landing_screen.dart';
 
 void main() async {
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
               darkTheme: ThemeData.dark(),
               themeMode: currentMode,
               debugShowCheckedModeBanner: false,
-              home: LandingScreen(),),
+              home: SplashScreen(title: 'indian Sign Languages'),),
       );
   });
   }
