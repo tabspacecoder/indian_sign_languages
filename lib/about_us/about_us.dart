@@ -118,19 +118,3 @@ class AboutUs extends StatelessWidget {
     );
   }
 }
-
-ListTile l = ListTile(
-  leading: CircleAvatar(
-    radius: 40.0,
-    backgroundImage: AssetImage('images/blackpanther.jpeg'),
-  ),
-  shape: RoundedRectangleBorder(
-    borderRadius: BorderRadius.circular(40),
-  ),
-  title: Text(
-    'Mugunth J C',
-    style: TextStyle(
-        color: Color(0xff480838), fontSize: 20, fontWeight: FontWeight.bold),
-  ),
-  subtitle: Text('CB.EN.U4CSE19440'),
-);

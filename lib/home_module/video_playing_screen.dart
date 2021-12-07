@@ -29,7 +29,7 @@ class _videoPlayerScreenState extends State<videoPlayerScreen> {
           child: Center(
             child: VideoItems(
               videoPlayerController: VideoPlayerController.asset(
-                'assets/videos/test.mp4',
+                'assets/videos/${widget.name}.mkv',
               ),
               autoplay: true,
               looping: true,
