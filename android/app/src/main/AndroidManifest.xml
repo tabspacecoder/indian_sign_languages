@@ -2,7 +2,7 @@
     package="com.cgv.isl.indian_sign_languages">
     <uses-permission android:name="android.permission.INTERNET"/>
    <application
-        android:label="indian_sign_languages"
+        android:label="Indian Sign Languages"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
