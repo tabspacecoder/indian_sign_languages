@@ -1,7 +1,5 @@
 import 'package:chewie/chewie.dart';
 import 'package:flutter/material.dart';
-import 'package:line_icons/line_icon.dart';
-
 import 'package:video_player/video_player.dart';
 
 class VideoItems extends StatefulWidget {
@@ -27,6 +25,7 @@ class _VideoItemsState extends State<VideoItems> {
       videoPlayerController: widget.videoPlayerController,
       aspectRatio:16/9,
       autoInitialize: true,
+
       autoPlay: widget.autoplay,
       looping: widget.looping,
       errorBuilder: (context, errorMessage) {
