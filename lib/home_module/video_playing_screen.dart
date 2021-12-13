@@ -31,6 +31,9 @@ class _videoPlayerScreenState extends State<videoPlayerScreen> {
               videoPlayerController: VideoPlayerController.asset(
                 'assets/videos/${widget.name}.mkv',
               ),
+              // videoPlayerController: VideoPlayerController.asset(
+              //   'assets/videos/${widget.name}.mp4',
+              // ),
               autoplay: true,
               looping: true,
             ),

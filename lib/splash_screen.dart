@@ -90,7 +90,7 @@ class _SplashScreenState extends State<SplashScreen> {
                 // color: Color(0xffffed00)
               ),
               child: AnimatedTextKit(animatedTexts: [
-                TyperAnimatedText('Indian Sign Languages!'),
+                TypewriterAnimatedText('Indian Sign Languages!'),
               ]),
             ),
           )

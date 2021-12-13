@@ -12,6 +12,7 @@ import 'package:rolling_switch/rolling_switch.dart';
 import 'package:searchbar_animation/searchbar_animation.dart';
 import 'package:switcher_button/switcher_button.dart';
 import 'package:toggle_switch/toggle_switch.dart';
+import 'dart:io' show Platform;
 
 import '../main.dart';
 
@@ -24,8 +25,10 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
+
   bool nightmode=true;
   TextEditingController search= TextEditingController();
+  int gridcount=2;
   List<String> words = ['ask','angry','cry','phone','how','who','eat','help','play','which','why','where','yes','love','good','drink','here','money'];
   List<String> displayWords= [];
   bool searchResult = true;
@@ -93,6 +96,14 @@ class _HomeScreenState extends State<HomeScreen> {
   }
   @override
   Widget build(BuildContext context) {
+    if (Platform.isAndroid) {
+      gridcount=2;
+    } else if (Platform.isIOS) {
+      gridcount=2;
+    }
+    else{
+      gridcount=4;
+    }
     return Scaffold(
       appBar: AppBar(
         leading:  IconButton(
@@ -102,10 +113,12 @@ class _HomeScreenState extends State<HomeScreen> {
             } ,
         ),
         centerTitle: true,
-        title: GlobalText(
-          str: "Indian Sign Languages",
-          fontSize: 18.sp,
-          fontWeight: FontWeight.w500,
+        title: Text(
+          "Indian Sign Languages",
+          style: TextStyle(fontFamily: 'MoonTime',fontWeight: FontWeight.w500,
+          fontSize: 32),
+
+
         ),
         actions: [
           Row(
@@ -156,7 +169,7 @@ class _HomeScreenState extends State<HomeScreen> {
             ),
             Expanded(
               child: GridView.count(
-                crossAxisCount: 2,
+                crossAxisCount: gridcount,
                 childAspectRatio: (1 / 1),
                 crossAxisSpacing: 5,
                 mainAxisSpacing: 5,
